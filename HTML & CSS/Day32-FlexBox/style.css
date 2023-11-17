@@ -1,0 +1,17 @@
+.container{
+    border: 2px solid red;
+    display: flex; 
+    /* --if we have to shift items from vertical to horizontal then at parent level selector, use "display:flex"
+    --by default "left to right" */
+    height: 80vh;
+    justify-content: center;
+    align-items: center; 
+    /* vertically align centre */
+}
+.item{
+    height: 62px;
+    width: 62px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    margin: 2px;
+}

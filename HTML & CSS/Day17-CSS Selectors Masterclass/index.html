@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        /* element Selector */
+        div{
+            background-color: red;
+        }
+        /* class Selector */
+        .firstdiv{
+            background-color: blueviolet;
+        }
+        /* Id Selector */
+        #secondiv{
+            background-color: green;
+        }
+        /* child Selector */
+        div > p{
+            background-color: rgb(19, 19, 179);
+            color: brown;
+        }
+        /* Descendant selector */
+        div p{
+            background-color:yellow;
+            color: brown;
+        }
+        /* universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo Selector */
+        a:visited{
+            color: rgb(210, 210, 62);
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: brown;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        I am a div with element selector
+        <p>I am Para inside div</p>
+        <article>
+            <p> I am inside article tag and article is in div</p>
+        </article>
+    </div>
+    <div class="firstdiv">
+        I am another div with class selector
+    </div>
+    <div id="secondiv">
+        I am also another div with Id Selector
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.twitter.com">Go to X</a>
+    <div>
+        <main>
+            <p>I am First</p>
+            <p>I am Second</p>
+        </main>
+    </div>
+</body>
+</html>

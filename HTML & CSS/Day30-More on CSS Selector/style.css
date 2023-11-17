@@ -1,0 +1,52 @@
+/* .box:first-child{
+    color: brown;
+} */
+.box::first-line{
+    color: rgb(140, 9, 123);
+}
+.box::first-letter{
+    color: peru;
+    font-size: 35px;
+}
+.boxes *{
+    background-color: blue;
+    border: 2px solid green;
+}
+/* ---attribute css--- */
+[data-color="primary"]{
+    padding-top: 45px;
+}
+/* ----Grouping of attribute css --- */
+p,a,.box, [data-color="primary"]{
+    padding-top: 45px;
+}
+/* -----nth child ex---- */
+.box:nth-child(even){
+    background-color: green;
+    
+}
+.box:nth-child(odd){
+    background-color: black;
+    
+}
+.box:nth-last-child(1){
+    background-color: red;
+    
+}
+
+/* =====Dynamically add contents through css ===== */
+.boxes::before{
+    content: "Rupesh is good";
+    color: blueviolet;
+}
+.boxes::after{
+    content: "Web Dev course is also good";
+    color: red;
+}
+/* =====use of "::selection"===== */
+::selection{
+    background-color: aqua;
+}
+input::placeholder{
+    color: brown;
+}
